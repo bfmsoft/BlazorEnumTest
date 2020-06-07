@@ -1,0 +1,34 @@
+﻿@inherits TestComponentBase
+
+@code {
+    MockJsRuntimeInvokeHandler MockJsRuntime { get; set; } = default!;
+
+    void Setup(Fixture fixture)
+    {
+        MockJsRuntime = fixture.Services.AddMockJsRuntime();
+    }
+}
+
+<Fixture Setup="Setup" Test="EnumInputSelectTest1" Description="Test EnumInputSelect first">
+    <ComponentUnderTest>
+        <EditForm Model="EnumTestModel">
+            <EnumInputSelect TEnum="EnumTest.EnumTestModel" @bind-Value="EnumTestModel.TestEnumType" Id="EnumInputId"
+                             ValidationFor="@(() => EnumTestModel.TestEnumType)" />
+        </EditForm>
+    </ComponentUnderTest>
+    <Fragment Id="expected">
+        <option></option>
+    </Fragment>
+
+    @code {
+        private EnumTestModel EnumTestModel = new EnumTestModel();
+
+        private void EnumInputSelectTest1(Fixture fixture)
+        {
+            var cut = fixture.GetComponentUnderTest();
+
+            cut.MarkupMatches("xxx");
+            //cut.Find("button").ClassList.ShouldContain(cssClass);
+        }
+    }
+</Fixture>

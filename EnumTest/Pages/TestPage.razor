@@ -1,0 +1,11 @@
+﻿@page "/test"
+
+<h1>Test EnumInputSelect</h1>
+
+<EditForm Model="EnumTestModel">
+    <EnumInputSelect Id="EnumTestId" TEnum="Enums.TestEnum" @bind-Value="EnumTestModel.TestEnumType" ValidationFor="@(() => EnumTestModel.TestEnumType)" />
+</EditForm>
+
+@code {
+    private EnumTestModel EnumTestModel { get; set; } = new EnumTestModel();
+}

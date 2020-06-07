@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.36
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumTest", "EnumTest\EnumTest.csproj", "{43DA4ACF-274D-4A14-8B32-65860C8169B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumTest.Tests", "EnumTest.Tests\EnumTest.Tests.csproj", "{88F91DCD-7E2E-4FF7-8DDE-1795A2810C40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43DA4ACF-274D-4A14-8B32-65860C8169B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DA4ACF-274D-4A14-8B32-65860C8169B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DA4ACF-274D-4A14-8B32-65860C8169B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DA4ACF-274D-4A14-8B32-65860C8169B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F91DCD-7E2E-4FF7-8DDE-1795A2810C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F91DCD-7E2E-4FF7-8DDE-1795A2810C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F91DCD-7E2E-4FF7-8DDE-1795A2810C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F91DCD-7E2E-4FF7-8DDE-1795A2810C40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6D595FE-F22C-4A81-B9DD-3F0171881A6F}
+	EndGlobalSection
+EndGlobal

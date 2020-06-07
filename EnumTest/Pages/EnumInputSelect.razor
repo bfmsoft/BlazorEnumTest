@@ -1,0 +1,16 @@
+﻿@typeparam TEnum
+@inherits EnumInputSelectBase<TEnum>
+
+<div class="form-control-wrapper">
+    <select class="form-control @CssClass" id="@Id" bind="@SelectedOption">
+        <option value="0">@DefaultItemText</option>
+        @foreach (var e in GetEnums())
+        {
+            <option value="@e.EnumId">@e.Text</option>
+        }
+        @ChildContent
+    </select>
+    <div class="form-control-validation">
+        <ValidationMessage For="@ValidationFor" />
+    </div>
+</div>
